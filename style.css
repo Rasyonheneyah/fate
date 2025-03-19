@@ -1,52 +1,58 @@
 @charset "UTF-8";
 
 body{
-    background-image:linear-gradient(to right, beige, #f5f2b9);
+    background-image:linear-gradient(120deg, #49b9fa,#87d1fc, #94d7fd,#bee7ff,#94d7fd, #87d1fc, #49b9fa);
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    height: 100%;
+    font-size: 18px;
+    
+    
 }
 MAIN{
     background-color: white;
     border-radius: 10px;
-    width: 450px;
-    padding: 10px;
+    width: 50em;
+    padding: 25px;
     margin: auto;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
 }
 h1{
-    color:#F27C38;
-    background-color:burlywood;
+    color:rgb(255, 161, 37);
+    font-family: 'Courier New', Courier, monospace;
+    background-image: linear-gradient(to right, #5044fa,#757eff ,#9368f8, #757eff, #5044fa);
     background-clip: border-box;
     text-align: center;
-    border-radius: 20px;
+    border-radius: 30px;
     width: max-content;
-    padding: 10px;
+    padding: 7.5px;
     margin:auto;
-    margin-block: 15px;
+    margin-block: 20px;
     box-shadow: 3px 5px 15px rgb(143, 118, 86);
     text-shadow: 1px 1px 0px ;
+    font-size: 3.5em;
+    
 }
 h2{
     color:#F2B138;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: auto; 
-    text-align: left;   
+    text-align: leftb;   
+    font-size: 2em;
 }
 p{
     text-align: justify;
-    text-align: center;
+    text-align: left;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
-    width: 450px;
-    margin:auto;
+    width: 50em;
+    padding: 25px;
+    margin: auto;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
+
 }
 a{
     text-decoration: none;
-    color: rgb(110, 92, 58);
-    background-color: rgba(124, 124, 124, 0.493);
+    color: #F2B138;
+    background-color: #5151529d;
     padding: 5px;
     border-radius: 20px;
 }

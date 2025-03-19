@@ -9,105 +9,110 @@
 </head>
 <body> 
     <h1>Matemática Discreta</h1>
-    <h2>Matérias</h2>
+    <MAIN>
+        <h2>Matérias</h2>
+        
+        <ol type="I">
+            <h3><li>Conjuntos</li></h3>
+                <h4>Introdução:</h4>
+                    
+                        <p>
+                            É uma coleção ou agrupamento de determinados elementos, que podem ter ou não alguma coisa em comum. Geralmente são representados por letras maiúsculas e a sua ordem não importa, pois o conjunto continua com os mesmos elementos independente de sua ordem. 
+                            
+                        </p>
+                        
+                            <p><strong><abbr title="Exemplo">Ex:</abbr></strong> A={0,1} e A={1,0} são iguais. </p>
+                            <p><strong>OBS:</strong> Os Conjuntos são representados por CHAVES {}, não por COLCHETES []. </p>
+                            <p><STRONG><abbr title="Exemplo dois">Ex2:</abbr></STRONG> B= {x <abbr title="tal que">|</abbr> x é multiplo de 5} B= {5,10,15,20,...} </p>
+                            <p><strong><abbr title="Exemplo três">Ex3:</abbr></strong> C= {X <abbr title="tal que">|</abbr> x é os meses do ano} C= {janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro} </p>
+                            
+                        
+                        
+                            <p><strong>Diagrama de Venn</strong> </p>
+                            <p><img height="150" src="imagens/DiagramaDeVenn.png" alt="Diagrama De Venn"></p>
+                            <p>Temos 3 conjuntos nesse Diagrama de Ven! <br></p>
+                            <p>E={1,2,3,4,5,6} A={2,3} B={2,5} </p>
+                            <p>O conjunto E tem todos os elementos, logo ele é o Conjunto Universo. O conjunto A e o B estão dentro do conjunto E porque tem os mesmos elementos do E. O 2 é um elemento em comum entre o conjunto A e o B, por isso tem aquela intersecção.</p>
+                            <p><abbr title="Intersecção de dois elementos é a área pintada de azul."><img width="150" height="100" src="imagens/interseccao.png" alt="Intersecção de um Conjunto A com um Conjunto B"></abbr></p>
+                        
+        
+                    <h4>Tipos e Relações de Conjuntos</h4>
+                        <p>
+                            Vamos continuar usando os conjuntos E={1,2,3,4,5,6} A={2,3} B={2,5} por enquanto.
+                        </p>
+                            <ul type="square">
+                                <li><h5>Pertinência:</h5></li>
+                                    
+                                        
+                                            <p>Relaciona um <i>Elemento</i> com um <i>Conjunto</i>.</p>
+                                            <p>∈ = Pertence; ∉ = Não Pertence;</p>
+                                            <p><strong><abbr title="Exemplos um">Ex1:</abbr></strong> <abbr title="O elemento 1 pertence ao conjunto E">1 ∈ E</abbr> ; <abbr title="O elemento 3 pertence ao conjunto A">3 ∈ A</abbr> ; <abbr title="O elemento 5 pertence ao conjunto B">5 ∈ B</abbr></p>
+                                            <p><strong><abbr title="Exemplos dois">Ex2:</abbr></strong> <abbr title="O elemento Brasil não pertence ao conjunto E">Brasil ∉ E</abbr>; <abbr title="O elemento 0 não pertence ao conjunto A">0 ∉ A</abbr>; <abbr title="O elemento 4 não pertence ao Conjunto B">4 ∉ B</abbr></p>
+                                <li><h5>Continência:</h5></li>
+                                    
+                                        <p>Relaciona <i>Conjuntos</i> e <i>Subconjuntos</i>. </p>
+                                        <p>⊂ = está contido em; ⊄ = não está contido em; ⊃ = contém; ⊅ = não contém;   </p>
+                                        <p><strong><abbr title="Exemplos um">Ex1:</abbr></strong> <abbr title="O conjunto A está contido em E">A ⊂ E;</abbr> <abbr title="O conjunto B está contido em E">B ⊂ E;</abbr>  </p>
+                                        <p><strong><abbr title="Exemplos dois">Ex2:</abbr></strong> <abbr title="O Conjunto A não está contido em B">A ⊄ B;</abbr> <abbr title="O conjunto B não está contido em A">B ⊄ A;</abbr> </p>
+                                        <p><strong><abbr title="Exemplos três">Ex3:</abbr></strong> <abbr title="O conjunto E contém o conjunto A">E ⊃ A;</abbr> <abbr title="O conjunto E contém o conjunto B">E ⊃ B;</abbr> </p>
+                                        <p><strong><abbr title="Exemplos quatro">Ex4:</abbr></strong> <abbr title="O conjunto A não contém B">A ⊅ B;</abbr> <abbr title="O conjunto B não contém A"></abbr>B ⊅ A; </p>
+                                    
+                                <li><h5>Conjunto Vazio:</h5></li>
+                                    
+                                        <p>Indica que o conjunto não tem elementos. </p>
+                                        <p>Representado por: ∅ ou { } </p>
+                                        <p><strong>OBS:</strong> NÃO USAR {∅} PARA REPRESENTAR VAZIO POR QUE ESTÁ ERRADO!  </p>
+                                        <p><strong><abbr title="Exemplos um">Ex1:</abbr></strong> <abbr title="O Conjunto C está vazio">C = ∅;</abbr> <abbr title="O Conjunto D não tem elementos.">D = { }</abbr>  </p>
+                                    
+                                <li><h5>Conjunto Universo:</h5></li>
+                                    <p>Conjunto U que tem todos os elementos de determinada situação. O conjunto E tem todos os elementos daquele exemplo,<br> então o conjunto U = conjunto E</p> 
+                                <li><h5>Conjunto Unitário:</h5></li>
+                                        <p>Conjunto que só tem um elemento. </p>
+                                        <p><strong><abbr title="Exemplo um">Ex1:</abbr></strong> G = {1}</p>
+                                <li><h5>União:</h5></li>
+                                    
+                                       <p> É a união dos elementos de dois conjuntos.  </p>
+                                       <p> &#x222A; = União/unido com; </p>
+                                       <p> A&#x222A;B = {x <abbr title="tal que">|</abbr> x ∈ A <i>ou</i> x ∈ B } </p>
+                                       <p> <strong><abbr title="Exemplo um">Ex1:</abbr></strong> A&#x222A;B = {2,3,5};</p> 
+                                    
+                                <li><h5>Intersecção:</h5></li>
+                                    
+                                        <p>É o que há de comum entre os dois conjuntos. </p>
+                                        <p>∩ = Intersecção/tem em comum com; </p>
+                                        <p>A∩B = {x <abbr title="tal que">|</abbr> x ∈ A <i>e</i> x ∈ B } </p>
+                                        <p><strong><abbr title="Exemplo um">Ex1:</abbr></strong> A∩B = {2}; </p>
+                                    
+                                <li><h5>Diferença:</h5></li>
+                                    
+                                        <p>Subtração de elementos entre conjuntos.
+                                        <p>B-A = {x <abbr title="tal que">|</abbr> x ∈ B <i>e</i> x ∉ A } </p>
+                                        <p>B-A = {5} </p>
+                                    
+                                <li><h5>Complemento:</h5></li>
+                                    
+                                        <p>Todos os elementos do Conjunto Universo que não está em determinado conjunto. </p>
+                                        <p>~a / a' = <abbr title="Quais elementos o conjunto A precisaria para ser igual ao conjunto universo?">{x <abbr title="tal que">|</abbr> x ∈ U <i>e</i> x ∉ A }</abbr> </p>
+                                        <p>~a = {1,4,5,6};  </p>
+                                    
+                                <li><h5>Conjunto de Potência/Partes:</h5></li>
+                                    
+                                        <p>Conjuntos formado por todos os subconjuntos de algum conjunto. Basicamente são todas as possibilidades de se agrupar os <br>subconjuntos de um conjunto. </p>
+                                        <p>P(A) = {∅,(2),(3),(2,3)} </p>
+                                        <p>Basicamente o número de subconjuntos possíveis é igual a 2 elevado ao número de elementos. </p>
+                                        <p><strong><abbr title="Exemplo um">Ex1:</abbr></strong> E = {1,2,3,4,5,6}; O conjunto E tem 6 elementos, então a quantidade de subconjuntos possíveis do conjunto E é igual a<br> 2<sup>6</sup> = 64 subconjuntos &#x1F480;.   </p>
+                                    
+        
+                        </ul>
+        
+        
+            <h3><li></li></h3>
+        
+            <h3><li></li></h3>
+        </ol>
     
-    <ol type="I">
-        <h3><li>Conjuntos</li></h3> 
-            <h4>Introdução:</h4>
-                <p>
-                    É uma coleção ou agrupamento de determinados elementos, que podem ter ou não alguma coisa em comum. Geralmente são representados por letras maiúsculas e a sua ordem não importa, pois o conjunto continua com os mesmos elementos independente de sua ordem. <br>
-                    <strong><abbr title="Exemplo">Ex:</abbr></strong> A={0,1} e A={1,0} são iguais. <br>
-                    <strong>OBS:</strong> Os Conjuntos são representados por CHAVES {}, não por COLCHETES []. <br>
-                    <STRONG><abbr title="Exemplo dois">Ex2:</abbr></STRONG> B= {x <abbr title="tal que">|</abbr> x é multiplo de 5} B= {5,10,15,20,...} <br>
-                    <strong><abbr title="Exemplo três">Ex3:</abbr></strong> C= {X <abbr title="tal que">|</abbr> x é os meses do ano} C= {janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro} <br>
-                    <strong>Diagrama de Venn</strong> <br>
-                    <img height="150" src="imagens/DiagramaDeVenn.png" alt="Diagrama De Venn"> <br>
-                    Temos 3 conjuntos nesse Diagrama de Ven! <br>
-                    E={1,2,3,4,5,6} A={2,3} B={2,5} <br>
-                    O conjunto E tem todos os elementos, logo ele é o Conjunto Universo. O conjunto A e o B estão dentro do conjunto E porque tem os mesmos elementos do E. O 2 é um elemento em comum entre o conjunto A e o B, por isso tem aquela intersecção. <br>
-                    <abbr title="Intersecção de dois elementos é a área pintada de azul."><img width="150" height="100" src="imagens/interseccao.png" alt="Intersecção de um Conjunto A com um Conjunto B"></abbr> 
-                </p>
-                 
-                <h4>Tipos e Relações de Conjuntos</h4>
-                    <p>
-                        Vamos continuar usando os conjuntos E={1,2,3,4,5,6} A={2,3} B={2,5} por enquanto. 
-                    </p>
-                        <ul type="square">
-                            <li><h5>Pertinência:</h5></li>
-                                <p>
-                                    Relaciona um <i>Elemento</i> com um <i>Conjunto</i>.
-                                    ∈ = Pertence; ∉ = Não Pertence;
-                                    <strong><abbr title="Exemplos um">Ex1:</abbr></strong> <abbr title="O elemento 1 pertence ao conjunto E">1 ∈ E</abbr> ; <abbr title="O elemento 3 pertence ao conjunto A">3 ∈ A</abbr> ; <abbr title="O elemento 5 pertence ao conjunto B">5 ∈ B</abbr>
-                                    <strong><abbr title="Exemplos dois">Ex2:</abbr></strong> <abbr title="O elemento Brasil não pertence ao conjunto E">Brasil ∉ E</abbr>; <abbr title="O elemento 0 não pertence ao conjunto A">0 ∉ A</abbr>; <abbr title="O elemento 4 não pertence ao Conjunto B">4 ∉ B</abbr>
-                                </p>
-                            <li><h5>Continência:</h5></li>
-                                <p>
-                                    Relaciona <i>Conjuntos</i> e <i>Subconjuntos</i>. <br>
-                                    ⊂ = está contido em; ⊄ = não está contido em; ⊃ = contém; ⊅ = não contém;   <br>
-                                    <strong><abbr title="Exemplos um">Ex1:</abbr></strong> <abbr title="O conjunto A está contido em E">A ⊂ E;</abbr> <abbr title="O conjunto B está contido em E">B ⊂ E;</abbr>  <br>
-                                    <strong><abbr title="Exemplos dois">Ex2:</abbr></strong> <abbr title="O Conjunto A não está contido em B">A ⊄ B;</abbr> <abbr title="O conjunto B não está contido em A">B ⊄ A;</abbr> <br>
-                                    <strong><abbr title="Exemplos três">Ex3:</abbr></strong> <abbr title="O conjunto E contém o conjunto A">E ⊃ A;</abbr> <abbr title="O conjunto E contém o conjunto B">E ⊃ B;</abbr> <br>
-                                    <strong><abbr title="Exemplos quatro">Ex4:</abbr></strong> <abbr title="O conjunto A não contém B">A ⊅ B;</abbr> <abbr title="O conjunto B não contém A"></abbr>B ⊅ A; <br>
-                                </p>
-                            <li><h5>Conjunto Vazio:</h5></li>
-                                <p>
-                                    Indica que o conjunto não tem elementos. <br>
-                                    Representado por: ∅ ou { } <br>
-                                    <strong>OBS:</strong> NÃO USAR {∅} PARA REPRESENTAR VAZIO POR QUE ESTÁ ERRADO!  <br>
-                                    <strong><abbr title="Exemplos um">Ex1:</abbr></strong> <abbr title="O Conjunto C está vazio">C = ∅;</abbr> <abbr title="O Conjunto D não tem elementos.">D = { }</abbr>  <br>
-                                </p>
-                            <li><h5>Conjunto Universo:</h5></li>
-                                <p>Conjunto U que tem todos os elementos de determinada situação. O conjunto E tem todos os elementos daquele exemplo, então o conjunto U = conjunto E <br></p>
-                            <li><h5>Conjunto Unitário:</h5></li>
-                                <p>
-                                    Conjunto que só tem um elemento. <br>
-                                    <strong><abbr title="Exemplo um">Ex1:</abbr></strong> G = {1}; <br>
-                                </p>
-                            <li><h5>União:</h5></li>
-                                <p>
-                                    É a união dos elementos de dois conjuntos.  <br>
-                                    &#x222A; = União/unido com; <br>
-                                    A&#x222A;B = {x <abbr title="tal que">|</abbr> x ∈ A <i>ou</i> x ∈ B } <br>
-                                    <strong><abbr title="Exemplo um">Ex1:</abbr></strong> A&#x222A;B = {2,3,5}; <br>
-                                </p>
-                            <li><h5>Intersecção:</h5></li>
-                                <p>
-                                    É o que há de comum entre os dois conjuntos. <br>
-                                    ∩ = Intersecção/tem em comum com; <br>
-                                    A∩B = {x <abbr title="tal que">|</abbr> x ∈ A <i>e</i> x ∈ B } <br>
-                                    <strong><abbr title="Exemplo um">Ex1:</abbr></strong> A∩B = {2}; <br>
-                                </p>
-                            <li><h5>Diferença:</h5></li>
-                                <p>
-                                    Subtração de elementos entre conjuntos.
-                                    B-A = {x <abbr title="tal que">|</abbr> x ∈ B <i>e</i> x ∉ A } <br>
-                                    B-A = {5} <br>
-                                </p>
-                            <li><h5>Complemento:</h5></li>
-                                <p>
-                                    Todos os elementos do Conjunto Universo que não está em determinado conjunto. <br>
-                                    ~a / a' = <abbr title="Quais elementos o conjunto A precisaria para ser igual ao conjunto universo?">{x <abbr title="tal que">|</abbr> x ∈ U <i>e</i> x ∉ A }</abbr> <br>
-                                    ~a = {1,4,5,6};  <br>
-                                </p>
-                            <li><h5>Conjunto de Potência/Partes:</h5></li>
-                                <p>
-                                    Conjuntos formado por todos os subconjuntos de algum conjunto. Basicamente são todas as possibilidades de se agrupar os subconjuntos de um conjunto. <br>
-                                    P(A) = {∅,(2),(3),(2,3)} <br>
-                                    Basicamente o número de subconjuntos possíveis é igual a 2 elevado ao número de elementos. <br>
-                                    <strong><abbr title="Exemplo um">Ex1:</abbr></strong> E = {1,2,3,4,5,6}; O conjunto E tem 6 elementos, então a quantidade de subconjuntos possíveis do conjunto E é igual a 2<sup>6</sup> = 64 subconjuntos &#x1F480;.   <br>
-                                </p>
-                   
-                    </ul>
-            
-                
-        <h3><li></li></h3>
-            
-        <h3><li></li></h3>
-    </ol>
-    
-
-
-    <hr>
-    <a href="index.html">Página Inicial</a>
+        <hr>
+        <a href="index.html">Página Inicial</a>
+    </MAIN>
 </body>
 </html>
