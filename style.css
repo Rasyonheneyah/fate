@@ -1,7 +1,11 @@
 @charset "UTF-8";
+@font-face {
+    font-family: Pixel ;
+    src: url(fontes/gameplay/Gameplay.ttf);
+}
 
 body{
-    background-image:linear-gradient(120deg, #49b9fa,#87d1fc, #94d7fd,#bee7ff,#94d7fd, #87d1fc, #49b9fa);
+    background-color: #001011;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     
@@ -16,19 +20,18 @@ MAIN{
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
 }
 h1{
-    color:rgb(255, 161, 37);
-    font-family: 'Courier New', Courier, monospace;
-    background-image: linear-gradient(to right, #5044fa,#757eff ,#9368f8, #757eff, #5044fa);
-    background-clip: border-box;
+    color:#E53D00;
+    font-family: "Pixel";
     text-align: center;
-    border-radius: 30px;
-    width: max-content;
-    padding: 7.5px;
+    padding: 9.0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
     margin:auto;
     margin-block: 20px;
-    box-shadow: 3px 5px 15px rgb(143, 118, 86);
     text-shadow: 1px 1px 0px ;
     font-size: 3.5em;
+    text-shadow:1px 5px 15px #6CCFF6;
     
 }
 h2{
@@ -52,9 +55,9 @@ p{
 a{
     text-decoration: none;
     color: #F2B138;
-    background-color: #5151529d;
     padding: 5px;
     border-radius: 20px;
+    text-shadow:1px 1px 1px #001011;
 }
 li{
     margin: 20px;

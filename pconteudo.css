@@ -1,6 +1,10 @@
 @charset "UTF-8";
+@font-face {
+    font-family: Pixel ;
+    src: url(fontes/gameplay/Gameplay.ttf);
+}
 body{
-    background-image:linear-gradient(120deg, #49b9fa,#87d1fc, #94d7fd,#bee7ff,#94d7fd, #87d1fc, #49b9fa);
+    background-color: #001011;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
@@ -17,22 +21,22 @@ MAIN{
     text-align: justify;
 }
 h1{
-    color:rgb(255, 161, 37);
-    font-family: 'Courier New', Courier, monospace;
-    background-image: linear-gradient(to right, #5044fa,#757eff ,#9368f8, #757eff, #5044fa);
-    background-clip: border-box;
+    color:#E53D00;
+    font-family: "Pixel";
     text-align: center;
-    border-radius: 30px;
-    width: max-content;
-    padding: 7.5px;
+    padding: 9.0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
     margin:auto;
-    margin-block: 30px;
-    box-shadow: 3px 5px 15px rgb(143, 118, 86);
+    margin-block: 20px;
     text-shadow: 1px 1px 0px ;
     font-size: 3.5em;
+    text-shadow:1px 5px 15px #6CCFF6;
+    background-clip: border-box;
 }
 h2{
-    font-family: cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ff0000;
     text-align: center;
     margin:auto;
