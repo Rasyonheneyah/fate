@@ -4,10 +4,7 @@
     src: url(fontes/gameplay/Gameplay.ttf);
 }
 
-.cabecalho{
-    display: flex;
-    justify-content: center;
-}
+
 body{
     background-color: #001011;
     font-family: Arial, Helvetica, sans-serif;
