@@ -1,11 +1,9 @@
 @charset "UTF-8";
 @font-face {
     font-family: Pixel ;
-    src: url(fontes/gameplay/Gameplay.ttf);
+    src: url(fontes/gameplay/Gameplay.ttf) format(truetype);
 }
-div{
-    margin:auto;
-}
+
 .cabecalho{
     display: block;
     justify-content: center;
@@ -22,7 +20,7 @@ MAIN{
     padding: 25px;
     margin: auto;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
-    block-size: auto;
+    
 }
 h1{
     color:#E53D00;
@@ -39,11 +37,12 @@ h1{
 }
 h2{
     color:#F2B138;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto; 
-    text-align: leftb;   
+    text-align: left;   
     font-size: 2em;
     padding-left: 20px;
+    letter-spacing: 0.15em;
 }
 p{
     text-align: justify;
@@ -57,9 +56,9 @@ p{
 
 }
 a{
-    text-decoration: none;
+    text-decoration:none;
     color: #F2B138;
     padding: 5px;
     border-radius: 20px;
-    text-shadow:1px 1px 1px #001011;
+    text-shadow:2px 3px 4px #001011;
 }
