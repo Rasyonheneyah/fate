@@ -3,8 +3,10 @@
     font-family: Pixel ;
     src: url(fontes/gameplay/Gameplay.ttf);
 }
-div{
-    margin:auto;
+
+.cabecalho{
+    display: flex;
+    justify-content: center;
 }
 body{
     background-color: #001011;
@@ -28,15 +30,13 @@ h1{
     font-family: "Pixel";
     text-align: center;
     padding: 9.0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 15px;
     margin:auto;
     margin-block: 20px;
     text-shadow: 1px 1px 0px ;
     font-size: 3.5em;
     text-shadow:1px 5px 15px #6CCFF6;
     background-clip: border-box;
+    letter-spacing: 0.15em;
 }
 h2{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -46,7 +46,6 @@ h2{
     text-shadow: 1px 1px 0px #c0c0c0 ;
     font-size: 2.8em;
     padding: 5px;
-
 }
 h3{
     color: #F2B138;
@@ -54,7 +53,7 @@ h3{
     text-align: left;
     font-size: 2em;
     padding: 0px;
-    
+    padding-left: 20px;
 }
 h4{
     color: #525252;
