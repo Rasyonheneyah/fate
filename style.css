@@ -1,27 +1,31 @@
 @charset "UTF-8";
 @font-face {
     font-family: Pixel ;
-    src: url(fontes/gameplay/Gameplay.ttf) format(truetype);
+    src: url(fontes/Gameplay.ttf) format(truetype);
 }
-@font-face {
-    font-family: Vikings;
-    src: url(fontes/vikings/VIKING-N.TTF);
+
+div#divprincipal{
+    width: auto;
+    height:auto ;
 }
+
+
 
 body{
     background-color: #001011;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
+
 MAIN{
     background-color: white;
     border-radius: 10px;
     width: 50em;
     padding: 25px;
     margin: auto;
-    box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
-    
+    box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);    
 }
+
 h1{
     color:#E53D00;
     font-family: "Pixel";
@@ -33,17 +37,22 @@ h1{
     font-size: 3.5em;
     text-shadow:1px 5px 15px #6CCFF6;
     letter-spacing: 0.15em;
-    
 }
+
 h2{
     color:#F2B138;
-    font-family: Vikings;
+    font-family: Arial, Helvetica, sans-serif;
     margin: auto; 
     text-align: left;   
     font-size: 2em;
     padding-left: 20px;
     letter-spacing: 0.15em;
 }
+
+h3{
+    text-align: left;
+}
+
 p{
     text-align: justify;
     text-align: left;
@@ -53,12 +62,20 @@ p{
     padding: 25px;
     margin: auto;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
-
 }
+
+.linkdisciplinas:hover{
+    color: #6CCFF6;
+    text-shadow:2px 3px 8px #001011;
+    border: #001011;
+}
+
 a{
     text-decoration:none;
     color: #F2B138;
     padding: 5px;
     border-radius: 20px;
-    text-shadow:2px 3px 4px #001011;
+    text-shadow:2px 3px 2px #001011;
+
 }
+

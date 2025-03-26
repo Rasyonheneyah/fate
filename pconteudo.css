@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
     font-family: Pixel ;
-    src: url(fontes/gameplay/Gameplay.ttf);
+    src: url(fontes/Gameplay.ttf);
 }
 
 
@@ -22,7 +22,7 @@ MAIN{
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
     text-align: justify;
 }
-h1{
+.tituloprincipal{
     color:#E53D00;
     font-family: "Pixel";
     text-align: center;
@@ -35,7 +35,7 @@ h1{
     background-clip: border-box;
     letter-spacing: 0.15em;
 }
-h2{
+h1{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ff0000;
     text-align: center;
@@ -44,19 +44,19 @@ h2{
     font-size: 2.8em;
     padding: 5px;
 }
-h3{
+h2{
     color: #F2B138;
     text-decoration-line: underline;
     text-align: left;
     font-size: 2em;
     padding: 0px;
 }
-h4{
+h3{
     color: #525252;
     text-align: left;
     font-size: 1.75em;
 }
-h5{
+h4{
     color: #000000;
     text-align: left;
     font-size: 1.5em;    
@@ -78,10 +78,14 @@ ul{
 ol{
     margin-left: 0.5em;
 }
+.voltar:hover{
+    background-color: #ec9f45;
+    color:#6c75f6;
+}
 a{
     text-decoration: none;
     border-radius: 10px;
-    background-color: rgb(241, 201, 154);
+    background-color: #f1c99a;
     padding: 5px;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
     text-align: center;
