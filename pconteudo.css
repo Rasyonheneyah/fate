@@ -22,6 +22,7 @@ header{
     position: fixed;
     width: 100%;
     margin-left: -0.5em;
+    font-size: 23px;
 
 }
 
@@ -37,9 +38,9 @@ header>h1{
     background-color: #E53D00;
     border-radius: 50%;
     margin-left: 10px;
-    margin-top: 5px;
-    width: 35px;
-    height: 35px;
+    margin-top: 0.30em;
+    width: 40px;
+    height: 40px;
     color: rgba(255, 255, 255, 0);
     display: flex ;
     align-items: center;
@@ -53,15 +54,15 @@ header>h1{
     background-repeat: no-repeat;
     display: block;
     position: relative;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     transform: translateX(-1.5px);
 }
 
-
 h1#primeiro{
-    margin-top: 1em;
+    margin-top: 2em;
 }
+
 
 .tituloprincipal{
 
@@ -138,13 +139,13 @@ ol{
     background-color: #ec9f45;
     color:#6c75f6;
 }
-a{
+main>a{
     text-decoration: none;
     border-radius: 10px;
     background-color: #f1c99a;
     padding: 5px;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
-    text-align: center;
+    align-items: center;
 }
 h3,h4,h5,h6{
     padding: 0;
@@ -158,7 +159,7 @@ footer{
     box-sizing: content-box;
     bottom: 0;
     width: 100%;
-    margin: 2em -1em -5em -0.5em;
+    margin: 5em -1em -5em -0.5em;
     color: white;
     text-align: center;
 }
@@ -171,6 +172,5 @@ footer>p{
     border-radius: 50%;
     width: 35px;
     height: 35px;
-    transform: translatey(2.8em);
-    margin-right: 20em;
+    margin-right: 10px;
 }
