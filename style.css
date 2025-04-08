@@ -1,157 +1,172 @@
 @charset "UTF-8";
+
+/* ===== FONTE PERSONALIZADA ===== */
 @font-face {
-    font-family: Pixel ;
-    src: url(fontes/Gameplay.ttf) format(truetype);
+    font-family: 'Pixel';
+    src: url('fontes/Gameplay.ttf') format('truetype');
 }
 
-body{
+/* ===== RESET E BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     background-color: #001011;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    color: #000;
 }
-  
 
-header{
+/* ===== CABEÇALHO ===== */
+header {
     background-color: #E53D00;
-    min-height: 3.0em;
-    padding: 0 0 0 0;
+    min-height: 3em;
+    padding: 0;
     box-shadow: 1px 2.5px 15px #838383a2;
-    box-sizing: content-box;
-    display:flex;
-    top: 0;
+    display: flex;
+    align-items: center;
     position: fixed;
+    top: 0;
     width: 100%;
-    margin-left: -0.5em;
     font-size: 23px;
-
+    z-index: 1000;
 }
 
-header>h1{
+header > h1 {
     display: inline-block;
     color: #6CCFF6;
     margin: 3px 0 0 10px;
-    text-shadow: 1px 1px 3px #000000;
+    text-shadow: 1px 1px 3px #000;
     font-size: 2em;
 }
 
-.esfera{
+/* ===== ÍCONES E DECORAÇÕES ===== */
+.esfera {
     background-color: #E53D00;
     border-radius: 50%;
     margin-left: 10px;
-    margin-top: 0.30em;
+    margin-top: 0.3em;
     width: 40px;
     height: 40px;
-    color: rgba(255, 255, 255, 0);
-    display: flex ;
+    color: transparent;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: 2px outset #F2B138;
 }
-.icone{
-    background-image: url(iconetamnormal.png);
+
+.icone {
+    background-image: url('iconetamnormal.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: block;
-    position: relative;
     width: 35px;
     height: 35px;
+    display: block;
     transform: translateX(-1.5px);
 }
 
-h1#primeiro{
-    margin-top: 2em;
-}
-
-.titulos{
-    color:#E53D00;
-    font-family: "Pixel";
-    text-align: center;
-    padding: 9.0px;
-    margin:auto;
-    margin-block: 20px;
-    text-shadow: 1px 1px 0px ;
-    font-size: 3.5em;
-    text-shadow:1px 5px 15px #6CCFF6;
-    letter-spacing: 0.15em;
-    display: block;
-}
-
-.introducao{
-    text-align: justify;
-    text-align: left;
-    background-color: white;
-    border-radius: 2px;
-    width: 50em;
-    padding: 25px;
-    margin: auto;
-    box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
-    text-indent: 5em;
-    overflow-wrap: break-word;
-}
-
-MAIN{
-    background-image: linear-gradient(45deg, #fcdec0,#fdf1e5,  #fff5ea , #fdf1e5, #fcdec0);
-    border-radius: 20px 0px;
-    width: 30em;
-    padding: 25px;
-    margin: auto;
-    box-shadow: 3px 5px 15px #838383a2;    
-    background-image: linear-gradient(45deg,);
-    border: 2.5px solid #F2B138;
-}
-
-h2{
-    color:#F2B138;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto; 
-    text-align: left;   
-    font-size: 2em;
-    padding-left: 20px;
-    letter-spacing: 0.15em;
-    border-radius: 20px;
-    text-shadow:2px 3px 2px #001011;
-
-}
-
-h3{
-    text-align: left;
-}
-
-.linkdisciplinas:hover{
-    color: #6CCFF6;
-    text-shadow:2px 3px 8px #001011;
-    border: #001011;
-}
-
-a{
-    text-decoration:none;
-    color: #F2B138;
-    padding: 5px;
-    border-radius: 20px;
-    text-shadow:2px 3px 2px #001011;
-    
-}
-
-footer{
-    background-color: #000000;
-    min-height: 3.0em;
-    padding: 0 1em 0 0;
-    box-sizing: content-box;
-    bottom: 0;
-    width: 100%;
-    margin: 5em -1em -5em -0.5em;
-    color: white;
-    text-align: center;
-}
-footer>p{
-    padding-top: 1em ;
-    transform: translatey(-1em);
-    
-}
-.circular{
+.circular {
     border-radius: 50%;
     width: 35px;
     height: 35px;
     margin-right: 10px;
 }
+
+/* ===== TÍTULOS ===== */
+h1#primeiro {
+    margin-top: 4em;
+}
+
+.titulos {
+    color: #E53D00;
+    font-family: 'Pixel', sans-serif;
+    text-align: center;
+    padding: 9px;
+    margin: 20px auto;
+    font-size: 3.5em;
+    letter-spacing: 0.15em;
+    text-shadow: 1px 5px 15px #6CCFF6;
+    display: block;
+}
+
+h2 {
+    color: #F2B138;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding-left: 20px;
+    letter-spacing: 0.15em;
+    border-radius: 20px;
+    text-shadow: 2px 3px 2px #001011;
+    text-align: left;
+    margin: 0.5em 0;
+}
+
+h3 {
+    text-align: left;
+}
+main ol, 
+main ul {
+    padding-left: 2em; /* espaçamento interno bonito */
+    margin-left: 0;    /* remove margem que empurra pra fora */
+    list-style-position: outside;
+}
+/* ===== LINKS ===== */
+a {
+    text-decoration: none;
+    color: #F2B138;
+    padding: 5px;
+    border-radius: 20px;
+    text-shadow: 2px 3px 2px #001011;
+}
+
+.linkdisciplinas:hover {
+    color: #6CCFF6;
+    text-shadow: 2px 3px 8px #001011;
+    border: none;
+}
+
+/* ===== SEÇÕES ===== */
+.introducao {
+    background-color: white;
+    border-radius: 2px;
+    width: 50em;
+    padding: 25px;
+    margin: 6em auto 2em;
+    box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
+    text-align: justify;
+    text-indent: 5em;
+    overflow-wrap: break-word;
+}
+
+/* main precisa estar em minúsculo */
+main {
+    background-image: linear-gradient(45deg, #fcdec0, #fdf1e5, #fff5ea, #fdf1e5, #fcdec0);
+    border-radius: 20px 0px;
+    width: 30em;
+    padding: 25px;
+    margin: auto;
+    box-shadow: 3px 5px 15px #838383a2;
+    border: 2.5px solid #F2B138;
+    text-align: justify;
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #000;
+    min-height: 3em;
+    padding: 1em;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 5em;
+}
+
+footer > p {
+    margin: 0;
+    transform: translateY(-1em);
+}
+
