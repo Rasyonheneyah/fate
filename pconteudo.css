@@ -79,17 +79,17 @@ h1#primeiro{
     display: block;
 }
 
-MAIN{
+main {
     background-color: white;
     border-radius: 10px;
-    width: 60em;
-    padding: 25px;
+    padding: 10px 25px;
     margin: auto;
-    box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
-    border-radius: 10px;
-    padding: 10px;
+    max-width: 95vw; /* mais responsivo */
+    width: 60em;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
     text-align: justify;
+    overflow-wrap: break-word; /* força quebra */
+    word-wrap: break-word;
 }
 
 h1{
@@ -173,4 +173,14 @@ footer>p{
     width: 35px;
     height: 35px;
     margin-right: 10px;
+}
+p {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+pre {
+    white-space: pre-wrap;      /* permite quebra de linha */
+    word-wrap: break-word;      /* quebra palavras longas */
+    overflow-x: auto;           /* rolagem horizontal se necessário */
+    max-width: 100%;            /* limita à largura do container */
 }
