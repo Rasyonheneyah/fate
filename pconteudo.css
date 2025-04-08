@@ -1,186 +1,193 @@
 @charset "UTF-8";
+
+/* ===== FONTE RETRÔ ===== */
 @font-face {
-    font-family: Pixel ;
-    src: url(fontes/Gameplay.ttf);
+    font-family: 'Pixel';
+    src: url('fontes/Gameplay.ttf');
 }
 
+/* ===== RESET GLOBAL E BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+body {
     background-color: #001011;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
+    color: #000;
 }
 
-header{
+/* ===== CABEÇALHO ===== */
+header {
     background-color: #E53D00;
-    min-height: 3.0em;
-    padding: 0 0 0 0;
-    box-shadow: 1px 2.5px 15px #838383a2;
-    box-sizing: content-box;
-    display:flex;
-    top: 0;
+    min-height: 3em;
+    display: flex;
+    align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin-left: -0.5em;
-    font-size: 23px;
-
+    box-shadow: 1px 2.5px 15px #838383a2;
+    padding: 0 1em;
+    z-index: 1000;
 }
 
-header>h1{
-    display: inline-block;
+header > h1 {
     color: #6CCFF6;
-    margin: 3px 0 0 10px;
-    text-shadow: 1px 1px 3px #000000;
     font-size: 2em;
+    text-shadow: 1px 1px 3px #000;
+    margin-left: 10px;
+    font-weight: bold;
 }
 
-.esfera{
+/* ===== ÍCONES E ESFERA ===== */
+.esfera {
     background-color: #E53D00;
     border-radius: 50%;
-    margin-left: 10px;
-    margin-top: 0.30em;
     width: 40px;
     height: 40px;
-    color: rgba(255, 255, 255, 0);
-    display: flex ;
+    display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 10px;
+    margin-top: 0.3em;
     border: 2px outset #F2B138;
+    color: transparent;
 }
-.icone{
-    background-image: url(iconetamnormal.png);
+
+.icone {
+    background-image: url('iconetamnormal.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    display: block;
-    position: relative;
     width: 35px;
     height: 35px;
+    display: block;
     transform: translateX(-1.5px);
 }
 
-h1#primeiro{
-    margin-top: 2em;
-}
-
-
-.tituloprincipal{
-
-    color:#E53D00;
-    font-family: "Pixel";
+/* ===== TÍTULOS ===== */
+.tituloprincipal {
+    font-family: 'Pixel', sans-serif;
+    color: #E53D00;
     text-align: center;
-    padding: 9.0px;
-    margin:auto;
-    margin-block: 20px;
-    text-shadow: 1px 1px 0px ;
+    padding: 9px;
+    margin-block: 2em 1em;
     font-size: 3.5em;
-    text-shadow:1px 5px 15px #6CCFF6;
     letter-spacing: 0.15em;
+    text-shadow: 1px 5px 15px #6CCFF6;
     display: block;
 }
 
-main {
-    background-color: white;
-    border-radius: 10px;
-    padding: 10px 25px;
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em 0 0.25em;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FF0000;
+    text-align: center;
+    font-size: 2.8em;
+    text-shadow: 1px 1px 0px #c0c0c0;
+    padding: 5px;
+}
+
+h1#primeiro {
+    margin-top: 3em;
+}
+
+h2 {
+    color: #F2B138;
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+h3 {
+    color: #525252;
+    font-size: 1.75em;
+}
+
+h4 {
+    color: #000;
+    font-size: 1.5em;
+}
+
+/* ===== TEXTO E LISTAS ===== */
+p, li {
+    text-align: left;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+ul, ol {
+    margin-left: 1.5em;
+}
+
+ul {
+    width: max-content;
     margin: auto;
-    max-width: 95vw; /* mais responsivo */
+}
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+main {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px;
+    margin: 6em auto 3em;
+    max-width: 95vw;
     width: 60em;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
     text-align: justify;
-    overflow-wrap: break-word; /* força quebra */
-    word-wrap: break-word;
 }
 
-h1{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #ff0000;
-    text-align: center;
-    margin:auto;
-    text-shadow: 1px 1px 0px #c0c0c0 ;
-    font-size: 2.8em;
-    padding: 5px;
-}
-h2{
-    color: #F2B138;
-    text-decoration-line: underline;
-    text-align: left;
-    font-size: 2em;
-    padding: 0px;
-}
-h3{
-    color: #525252;
-    text-align: left;
-    font-size: 1.75em;
-}
-h4{
-    color: #000000;
-    text-align: left;
-    font-size: 1.5em;    
-
-}
-p{
-    text-align: left;
-}
-li{
-    margin:auto;
-    width: auto;
-    text-align: left;
-}
-ul{
-    text-align: left;
-    width: max-content;
-    margin:auto;
-}
-ol{
-    margin-left: 0.5em;
-}
-.voltar:hover{
-    background-color: #ec9f45;
-    color:#6c75f6;
-}
-main>a{
+/* ===== LINKS E BOTÕES ===== */
+main > a {
+    display: inline-block;
     text-decoration: none;
-    border-radius: 10px;
     background-color: #f1c99a;
-    padding: 5px;
+    color: inherit;
+    padding: 5px 10px;
+    border-radius: 10px;
     box-shadow: 3px 5px 15px rgba(131, 131, 131, 0.637);
-    align-items: center;
-}
-h3,h4,h5,h6{
-    padding: 0;
-    margin: 0.10em;
+    transition: all 0.3s ease;
 }
 
-footer{
-    background-color: #000000;
-    min-height: 3.0em;
-    padding: 0 1em 0 0;
-    box-sizing: content-box;
-    bottom: 0;
-    width: 100%;
-    margin: 5em -1em -5em -0.5em;
-    color: white;
-    text-align: center;
+main > a.voltar:hover {
+    background-color: #ec9f45;
+    color: #6c75f6;
 }
-footer>p{
-    padding-top: 1em ;
-    transform: translatey(-1em);
-    
+
+/* ===== CÓDIGO (PRE) ===== */
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+    max-width: 100%;
 }
-.circular{
+
+/* ===== IMAGENS E DECORAÇÕES ===== */
+.circular {
     border-radius: 50%;
     width: 35px;
     height: 35px;
     margin-right: 10px;
 }
-p {
-    overflow-wrap: break-word;
-    word-break: break-word;
+
+/* ===== RODAPÉ ===== */
+footer {
+    background-color: #000;
+    min-height: 3em;
+    color: #FFF;
+    text-align: center;
+    padding: 1em;
+    margin-top: 5em;
 }
-pre {
-    white-space: pre-wrap;      /* permite quebra de linha */
-    word-wrap: break-word;      /* quebra palavras longas */
-    overflow-x: auto;           /* rolagem horizontal se necessário */
-    max-width: 100%;            /* limita à largura do container */
+
+footer > p {
+    margin: 0;
+    transform: translateY(-0.5em);
 }
